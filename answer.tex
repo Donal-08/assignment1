@@ -1,0 +1,93 @@
+\documentclass[journal, 12pt, twocolumn]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\graphicspath{{figs/}}
+\title{AI1110 Assignment 1}
+\author{Donal Loitam(AI21BTECH11009)}
+
+\begin{document}
+    \maketitle
+
+    \textbf{\large{ICSE class 10 paper 2019}}\\
+    \\
+    \\
+    {Q2 (C):
+    In an Arithmetic Progression, the fourth and sixth terms are 8 and 16 respectively.Find :\\
+ i) common difference\\
+ ii) first term\\
+ iii) sum of the first 20 terms}\\\\\\
+    \textbf{\large{Solution:}}
+    Let $a_i$\text { denote the i th term of the AP }, 
+ \(d\)\text{ denote the common diff,} 
+$S_{20}$\text{ denote the sum of first 20 terms}\\
+
+\begin{table}[h!]
+\caption{Variables}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Symbol & value \\
+        $ i $  &  4   \\
+         $ j $  &  6   \\
+         $ a_i $ &  8  \\
+         $ a_j $ & 14  \\
+         $ a_1 $ &  ?  \\
+            d    &  ?  \\
+        $S_{n}$  &  ?  \\
+       $S_{20}$  &  ?  \\
+          \hline
+    \end{tabular}
+\end{table}
+    
+
+
+\textbf{For any general $a_i$ , $a_j$ :}\\
+\begin{align*}
+        &(i)&a_i + (j-i)d &= a_j\\
+        &\Rightarrow & (j-i)d &= a_j - a_i\\
+        &\Rightarrow & d  &= \tfrac{a_j - a_i}{(j-i)} \tag{1}\\ 
+    \end{align*}
+Substituting  $i=4,j=6,a_i=8$ and $a_j=14$ in eq.(1):
+\begin{align*}
+ & \Rightarrow & d  &= \tfrac{14-8}{(6-4)} \\
+    & \Rightarrow & d  &= \tfrac{6}{2} \\
+        &  \therefore  & d  &=  3 \tag{2}  \\
+\end{align*}
+    
+    
+     \begin{align*}
+        &(ii)&a_1 + (i-1)d &= a_i\\
+        &\Rightarrow & a_1 &= a_i - (i-1)d\tag{3}\\
+         \end{align*}
+Substituting $d=3$ and $a_i=8$  in eq.(3):
+\begin{align*}
+    &\Rightarrow & a_1 &= 8-(4-1)3  \;\\
+    &\Rightarrow & a_1 &= 8-(3)3  \;\\
+    &\Rightarrow & a_1 &= 8-9  \;\\
+   &\therefore &  a_1 &= -1 \tag{4}\\
+\end{align*}         
+    
+Now calculating $S_n$ for general n:   
+    \begin{align*}
+        iii)  S_{n} &= a_1 + a_2 + ......... + a_{20}\\
+               &= \tfrac{n\;\times\;\left[2a_1 + (n-1)d\right]}{2} \tag{5}\\
+    \end{align*} 
+Using values from eq.(2) and eq.(4) in eq.(5):
+\begin{align*}
+    &  & S_{n}  &= \tfrac{n\;\times\;\left[2(-1) + (n-1)3\right]}{2}\\
+   &  \therefore  & S_n  &=  \tfrac{n\;\times\;\left[3(n-1) - 2\right]}{2}\tag{6}\\
+\end{align*}
+
+Substituting $n=20$ in eq.(6) 
+ \begin{align*}
+    &  & S_{20}  &= \tfrac{20\;\times\;\left[3(20-1) - 2\right]}{2}\\
+   &  \Rightarrow  & S_{20}  &=  10\times[3(19)-2]\\
+   &  \Rightarrow  & S_{20}  &=  10\times[57-2]\\
+   &  \therefore  & S_{20}  &=  10\times[55] = 550
+\end{align*}
+
+    
+    
+\end{document}
